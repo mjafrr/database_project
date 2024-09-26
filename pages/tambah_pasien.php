@@ -1,6 +1,6 @@
 <?php
 
-require 'koneksi.php';
+require "./../koneksi.php";
 
 if (isset($_POST["submit"])) {
 
@@ -10,14 +10,14 @@ if (isset($_POST["submit"])) {
         echo "
             <script>
                 alert('Datamu Berhasil Ditambahkan!');
-                document.location.href = 'index.php';
+                document.location.href = '../index.php';
             </script>
         ";
     } else {
         echo "
             <script>
                 alert('Datamu Gagal Ditambahkan!');
-                document.location.href = 'index.php';
+                document.location.href = '../index.php';
             </script>
         ";
     }

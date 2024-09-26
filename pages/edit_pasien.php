@@ -1,6 +1,6 @@
 <?php
 
-require 'koneksi.php';
+require "./../koneksi.php";
 
 $id = $_GET["id"];
 
@@ -14,14 +14,14 @@ if (isset($_POST["submit"])) {
         echo "
             <script>
                 alert('Datamu Berhasil Diedit!');
-                document.location.href = 'index.php';
+                document.location.href = '../index.php';
             </script>
         ";
     } else {
         echo "
             <script>
                 alert('Datamu Gagal Diedit!');
-                document.location.href = 'index.php';
+                document.location.href = '../index.php';
             </script>
         ";
     }
@@ -43,7 +43,7 @@ if (isset($_POST["submit"])) {
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="w-full max-w-lg p-8 bg-white shadow-md rounded-lg">
-        <a href="index.php"
+        <a href="../index.php"
             class="text-blue-500 hover:text-blue-700 text-sm mb-4 inline-block"> Back to home
         </a>
         <h1 class="text-2xl font-bold mb-6"> Edit Data Pasien </h1>
